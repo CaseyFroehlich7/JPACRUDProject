@@ -59,8 +59,9 @@ public class NationalParkJpaImpl implements NationalParkDAO {
 		return updatePark;
 	}
 
+
 	@Override
-	public boolean delete(int parkId) {
+	public boolean delete(Integer parkId, NationalPark park) {
 		boolean successfullyDeleted = false;
 		
 		NationalPark deletePark = em.find(NationalPark.class, parkId);

@@ -9,9 +9,11 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h2>${id} delete check</h2>
+
+<h2>${NationalPark.id} id check</h2>
 <h1>Delete National Park</h1>
 <form action="deleteresult.do" method="POST">
+<input id="parkId" value="${NationalPark.id}" name="parkId" type="hidden"/>
       <input type="submit" value="Delete Park">
     </form>
 

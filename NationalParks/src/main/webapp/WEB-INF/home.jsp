@@ -30,7 +30,7 @@
 			</form>
 			<br>
 			<br>
-	<form action="updateresults.do" method="GET">
+	<form action="updatePark.do" method="GET">
 		Update National Park:  <input type="submit"
 			value="Search" />
 			</form>

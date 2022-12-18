@@ -27,7 +27,7 @@ ${NationalPark.description}
 	</form>
 	<form action="deletePark.do" method="get">
 	<input name="parkId" type="hidden" value="${NationalPark.id}">
-	<button>Delete</button>
+	<input type="submit" value="Delete National Park"/>
 	</form>
 	
 </body>

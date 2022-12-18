@@ -12,5 +12,5 @@ public interface NationalParkDAO {
 	List<NationalPark> findAll();
 	NationalPark create(NationalPark park);
 	NationalPark update(Integer parkId, NationalPark park);
-	boolean delete(int parkId);
+	boolean delete(Integer parkId, NationalPark park);
 }

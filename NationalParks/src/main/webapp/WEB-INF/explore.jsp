@@ -11,7 +11,17 @@
 	
 <h1>Explore National Parks</h1>
 
-${NationalPark}
+${parkList}
+<ul>
+<li>${NationalPark.parkId}</li>
+<li>${NationalPark.name}</li>
+<li>${NationalPark.state}</li>
+<li>${NationalPark.yearEstablished}</li>
+<li>${NationalPark.description}</li>
+
+
+</ul>
+
 <br>
 <br>
 	<form action="home.do" method="GET">
@@ -24,7 +34,7 @@ ${NationalPark}
 			</form>
 	<br>
 <br>
-	<form action="delete.do" method="GET">
+	<form action="deletepark.do" method="GET">
 		 <input type="submit"value="Delete Your Park" />
 			</form>
 	<br>

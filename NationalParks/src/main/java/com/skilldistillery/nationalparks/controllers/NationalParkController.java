@@ -28,9 +28,26 @@ public class NationalParkController {
 		return "results";
 	}
 	
+
+
+	
+	
+	@RequestMapping(path = { "createPark.do" })
+	public String create() {
+		
+		return "create";
+	}
+	
+	@RequestMapping(path = { "createPark.do" }, method = RequestMethod.POST)
+	public String createPost(NationalPark park) {
+		dao.create(park);
+		return "createresult";
+	}
+
+
+	
 	@GetMapping(path = {"getParkToUpdate.do"}) 
 	public ModelAndView getParkToUpdate(Integer parkId) {
-		
 		System.out.println("parkId" + parkId);
 		ModelAndView mv = new ModelAndView();
 		NationalPark parkToUpdate = dao.findById(parkId);
@@ -49,33 +66,24 @@ public class NationalParkController {
 		mv.setViewName("updateresult");
 		return mv;
 	}
-
+	@GetMapping(path = { "deletePark.do" })
+	public ModelAndView getParkToDelete(Integer parkId) {
+	System.out.println("parkId" + parkId);
+	ModelAndView mv = new ModelAndView();
+	NationalPark parkToDelete = dao.findById(parkId);
+	mv.addObject("NationalPark", parkToDelete);
+	mv.setViewName("delete");
+	return mv;
+}
 	
-	
-	@RequestMapping(path = { "createPark.do" })
-	public String create() {
-		
-		return "create";
-	}
-	
-	@RequestMapping(path = { "createPark.do" }, method = RequestMethod.POST)
-	public String createPost(NationalPark park) {
-		dao.create(park);
-		return "createresult";
-	}
-
-
-	
-	
-	@RequestMapping(path = { "deletePark.do" })
-	public String delete() {
-		return "results";
-	}
-	
-	@RequestMapping(path = { "deleteresult.do" })
-	public String deleteResult(Model model, int parkId) {
-		model.addAttribute("NationalPark", dao.delete(parkId));
-		return "deleteresult";
+	@RequestMapping(path = { "deleteresult.do" }, method = RequestMethod.POST)
+	public ModelAndView deletePost(Integer parkId, NationalPark park) {
+	System.out.println("parkId" + parkId);
+	System.out.println("park" + park);
+	ModelAndView mv = new ModelAndView();
+	dao.delete(parkId, park);
+	mv.setViewName("deleteresult");
+	return mv;
 	}
 
 	@RequestMapping(path = { "explore.do" })
@@ -85,9 +93,10 @@ public class NationalParkController {
 	}
 	
 	@RequestMapping(path = { "result.do" })
-	public String results(Model model, int parkId) {
+	public String results(Model model, Integer parkId) {
 		model.addAttribute("NationalPark", dao.findById(parkId));
 		return "result";
+		
 	}
 	
 

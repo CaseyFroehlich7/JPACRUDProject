@@ -13,11 +13,20 @@
 
 <c:choose>
 	<c:when test="${! empty NationalPark}">
-	National Park Successfully Deleted!
+		<p>National Park Successfully Deleted!</p>
+	<ul id="Your National Park Details: ">
+	<li>${NationalPark.id}</li>
+	<li>${NationalPark.name}</li>
+	<li>${NationalPark.yearEstablished}</li>
+	<li>${NationalPark.description}</li>
+	
+	
+	</ul>
 	</c:when>
 	
+	
 	<c:otherwise>
-	<p>Error Deleting National ParK</p>
+	<p>Error Deleting National Park</p>
 	</c:otherwise>
 
 </c:choose>

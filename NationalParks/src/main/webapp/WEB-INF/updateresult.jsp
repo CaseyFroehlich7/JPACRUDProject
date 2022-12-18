@@ -24,7 +24,6 @@
 	</ul>
 	</c:when>
 	<c:otherwise>
-	Error Updating National Park
 	</c:otherwise>
 	
 </c:choose>
