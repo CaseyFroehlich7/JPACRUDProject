@@ -19,19 +19,11 @@ public class NationalPark {
 	
 	private String state;
 	
-	private String city;
-	
-	private String address;
-
 	private String description;
 
-	@Column(name = "image_url")
-	private String imageUrl;
+//	@Column(name = "image_url")
+//	private String imageUrl;
 
-	private String history;
-
-	private String trails;
-	
 	@Column(name = "year_established")
 	private String yearEstablished;
 
@@ -55,38 +47,6 @@ public class NationalPark {
 		this.name = name;
 	}
 
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public String getImageUrl() {
-		return imageUrl;
-	}
-
-	public void setImageUrl(String imageUrl) {
-		this.imageUrl = imageUrl;
-	}
-
-	public String getHistory() {
-		return history;
-	}
-
-	public void setHistory(String history) {
-		this.history = history;
-	}
-
-	public String getTrails() {
-		return trails;
-	}
-
-	public void setTrails(String trails) {
-		this.trails = trails;
-	}
-
 	public String getState() {
 		return state;
 	}
@@ -95,23 +55,21 @@ public class NationalPark {
 		this.state = state;
 	}
 
-	public String getCity() {
-		return city;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
-	}
-	
-
-	public String getAddress() {
-		return address;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
+//	public String getImageUrl() {
+//		return imageUrl;
+//	}
+//
+//	public void setImageUrl(String imageUrl) {
+//		this.imageUrl = imageUrl;
+//	}
 
 	public String getYearEstablished() {
 		return yearEstablished;
@@ -123,11 +81,9 @@ public class NationalPark {
 
 	@Override
 	public String toString() {
-		return "NationalPark [id=" + id + ", name=" + name + ", state=" + state + ", city=" + city + ", address="
-				+ address + ", description=" + description + ", imageUrl=" + imageUrl + ", history=" + history
-				+ ", trails=" + trails + ", yearEstablished=" + yearEstablished + "]";
+		return "NationalPark [id=" + id + ", name=" + name + ", state=" + state + ", description=" + description
+				+ ", imageUrl=" + ", yearEstablished=" + yearEstablished + "]";
 	}
-
 
 
 }
