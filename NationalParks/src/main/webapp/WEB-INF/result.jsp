@@ -5,29 +5,38 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<form action="home.do" method="GET">
+		 <input type="submit"value="HOME" />
+			</form>
+			<br>
+			<br>
 
-<h1>Results JSP</h1>
+<ul>
+<h1>Current National Park Information: </h1>
+<li>${NationalPark.id}</li>
+<li>${NationalPark.name}</li>
+<li>${NationalPark.state}</li>
+<li>${NationalPark.yearEstablished}</li>
+<li>${NationalPark.description}</li>
+</ul>
+
+	
 
 <label name="parkId" value="${NationalPark.id}" hidden></label>
 <label name="parkId" value="${NationalPark.id}"></label>
 
 
-${NationalPark.id}
-${NationalPark.name}
-${NationalPark.state}
-${NationalPark.yearEstablished}
-${NationalPark.description}
-<a href="getParkToUpdate.do" value="${NationalPark.id}">Update Park</a>
 	<form action="getParkToUpdate.do" method="get">
 	<input name="parkId" type="hidden" value="${NationalPark.id}">
-	<button>Update</button>
+	<input type="submit" value="Update"/>
 	</form>
+	<br>
 	<form action="deletePark.do" method="get">
 	<input name="parkId" type="hidden" value="${NationalPark.id}">
-	<input type="submit" value="Delete National Park"/>
+	<input type="submit" value="Delete"/>
 	</form>
 	
 </body>

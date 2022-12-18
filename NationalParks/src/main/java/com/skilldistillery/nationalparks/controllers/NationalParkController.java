@@ -19,6 +19,7 @@ public class NationalParkController {
 
 	@RequestMapping(path = { "/", "home.do" })
 	public String goToHome(Model model) {
+		model.addAttribute("parkList", dao.findAll());
 		return "home";
 
 	}
@@ -27,10 +28,6 @@ public class NationalParkController {
 	public String update() {
 		return "results";
 	}
-	
-
-
-	
 	
 	@RequestMapping(path = { "createPark.do" })
 	public String create() {
@@ -44,8 +41,6 @@ public class NationalParkController {
 		return "createresult";
 	}
 
-
-	
 	@GetMapping(path = {"getParkToUpdate.do"}) 
 	public ModelAndView getParkToUpdate(Integer parkId) {
 		System.out.println("parkId" + parkId);

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+h1 {
+	color: #1674a6;
+	font-family: andalemono;
+		background: white;
+}
+
+a{
+	color: #1674a6;
+	font-family: andalemono;
+		background: white;
+}
+
+
+label {
+	color: #1674a6;
+	font-family: andalemono;
+		background: white;
+}
+
+ul {
+	color: #1674a6;
+	font-family: andalemono;
+		background: white;
+	
+}
+
+li {
+	color: #1674a6;
+	font-family: andalemono;
+	background: white;
+}
+  
+ p {
+ 	color: #000000;
+	font-family: andalemono;
+ }
+
+
+
+form {
+	color: #020000;
+		font-family: andalemono;
+	
+}
+input {
+		color: #1674a6;
+	font-family: andalemono;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+ body {
+ background:
+		url("https://external-preview.redd.it/TMSwyv5kt4p4Kaqp4jxI6AZGILcfOPQyi1nX4FHQ5kk.jpg?auto=webp&s=db1cb48fae43823aa65038576e554609e9e09e49");
+	background-repeat: no-repeat;
+	background-size: cover;
+ }  
+ 

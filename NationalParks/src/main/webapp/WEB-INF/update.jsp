@@ -9,10 +9,21 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<form action="home.do" method="GET">
+		 <input type="submit"value="HOME" />
+			</form>
+			<br>
+			<br>
+<ul>
+<h1>Current National Park Information: </h1>
+<li>${NationalPark.id}</li>
+<li>${NationalPark.name}</li>
+<li>${NationalPark.state}</li>
+<li>${NationalPark.yearEstablished}</li>
+<li>${NationalPark.description}</li>
+</ul>
 
-${NationalPark.id} id check
-
-<h1>Update National Park</h1>
+<h1>Update National Park Information:</h1>
 <form action="updatepark.do" method="POST">
 <input id="parkId" value="${NationalPark.id}" name="parkId" type="hidden"/>
            <label for="update">Name:</label>

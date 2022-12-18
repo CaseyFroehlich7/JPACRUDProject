@@ -10,8 +10,15 @@
 </head>
 <body>
 
-<h2>${NationalPark.id} id check</h2>
-<h1>Delete National Park</h1>
+<ul>
+<h2>Warning! You are about to delete a National Park.</h2>
+<h1>National Park: </h1>
+<li>${NationalPark.id}</li>
+<li>${NationalPark.name}</li>
+<li>${NationalPark.state}</li>
+<li>${NationalPark.yearEstablished}</li>
+<li>${NationalPark.description}</li>
+</ul>
 <form action="deleteresult.do" method="POST">
 <input id="parkId" value="${NationalPark.id}" name="parkId" type="hidden"/>
       <input type="submit" value="Delete Park">

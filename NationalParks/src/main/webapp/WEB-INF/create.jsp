@@ -9,7 +9,11 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+	<form action="home.do" method="GET">
+		 <input type="submit"value="HOME" />
+			</form>
+			<br>
+			<br>
 <h1>Create National Park</h1>
 <form action="createPark.do" method="POST">
       <label for="create">Name:</label>
@@ -28,6 +32,7 @@
  
       <input type="submit" value="Create Park">
     </form>
+    
 
 </body>
 </html>

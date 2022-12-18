@@ -24,11 +24,6 @@
 	</ul>
 	</c:when>
 	
-	
-	<c:otherwise>
-	<p>Error Deleting National Park</p>
-	</c:otherwise>
-
 </c:choose>
 
 

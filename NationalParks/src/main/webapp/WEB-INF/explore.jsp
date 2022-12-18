@@ -6,43 +6,39 @@
 <head>
 <meta charset="UTF-8">
 <title>National Parks</title>
+<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	
-<h1>Explore National Parks</h1>
-
-${parkList}
-<ul>
-<li>${NationalPark.parkId}</li>
-<li>${NationalPark.name}</li>
-<li>${NationalPark.state}</li>
-<li>${NationalPark.yearEstablished}</li>
-<li>${NationalPark.description}</li>
-
-
-</ul>
-
-<br>
+	<br>
 <br>
 	<form action="home.do" method="GET">
 		 <input type="submit"value="HOME" />
 			</form>
-	<br>
-<br>
-	<form action="create.do" method="GET">
+			<br>
+			<br>
+
+	<form action="result.do" method="GET">
+		Search By National Park Id: 
+		<br>
+		<input type="text" name="parkId" /> <input type="submit"
+			value="Search" />
+			</form>
+			<br>
+
+	<form action="createPark.do" method="GET">
 		 <input type="submit"value="Create a National Park" />
 			</form>
-	<br>
+	
 <br>
-	<form action="deletepark.do" method="GET">
+<!-- 	<form action="delete.do" method="GET">
 		 <input type="submit"value="Delete Your Park" />
 			</form>
-	<br>
+	
 <br>
-	<form action="update.do" method="POST">
+	<form action="getParkToUpdate.do" method="POST">
 		 <input type="submit"value="Update Your Park" />
 			</form>
-	
+	 -->
 
 
 	
