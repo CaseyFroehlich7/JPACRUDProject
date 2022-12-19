@@ -1,4 +1,4 @@
-### JPACRUDProject
+# JPACRUDProject
 
 # Description:
 The task for this project was to build a website, front end, and back end from the ground up. Starting with the creation of the database, MySQL Workbench was used to create the database, the tables, and the EER diagram. From that point the information was forward engineered and the information was accessible from either the terminal or MySWQL Workbench.
