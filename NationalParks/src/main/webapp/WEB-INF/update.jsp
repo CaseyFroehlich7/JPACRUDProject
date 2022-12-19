@@ -15,7 +15,7 @@
 			<br>
 			<br>
 <ul>
-<h1>Current National Park Information: </h1>
+<li>Current National Park Information: </li>
 <li>${NationalPark.id}</li>
 <li>${NationalPark.name}</li>
 <li>${NationalPark.state}</li>
