@@ -18,7 +18,7 @@
 			<br>
 
 	<form action="result.do" method="GET">
-		Search By National Park Id: 
+		<h1>Search By National Park Id:</h1>
 		<br>
 		<input type="text" name="parkId" /> <input type="submit"
 			value="Search" />

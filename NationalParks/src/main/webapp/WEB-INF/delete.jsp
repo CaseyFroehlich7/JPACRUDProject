@@ -9,7 +9,11 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+	<form action="home.do" method="GET">
+		 <input type="submit"value="HOME" />
+			</form>
+			<br>
+			<br>
 <ul>
 <h2>Warning! You are about to delete a National Park.</h2>
 <h1>National Park: </h1>
