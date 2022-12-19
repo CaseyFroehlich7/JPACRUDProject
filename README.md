@@ -1,13 +1,13 @@
 ### JPACRUDProject
 
-### Description:
+# Description:
 The task for this project was to build a website, front end, and back end from the ground up. Starting with the creation of the database, MySQL Workbench was used to create the database, the tables, and the EER diagram. From that point the information was forward engineered and the information was accessible from either the terminal or MySWQL Workbench.
 
 The next steps were to create an entity class with its fields, a JpaImpl that implemented an interface, and a controller. These steps were pretty straight forward but lead to a more complex portion of the project and that was mapping out all of the necessary JSP files.
 
 The user will be able to access the website, explore National Parks, search for a National Park by its park id, update the park, or delete the park. They will also have the option to create their own National Park where they will have the option to update or delete as well.
 
-### Technologies Used:
+# Technologies Used:
 <ul>
 <li>CRUD</li>
 <li>MySql</li>
